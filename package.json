@@ -1,15 +1,15 @@
 {
-  "author": "Jeremy Dowell",
-  "name": "brunch-with-edge-benedict",
-  "description": "The newest (read: UNSTABLE) libraries for AngularJS, Bootstrap, and Sling-UI. Updated weekly (if needed)",
+  "author": "Surat Teerapittayanon",
+  "name": "brunch-with-bacon",
+  "description": "Brunch with AngularJS, Bootstrap, JQuery.",
   "version": "0.1.1",
-  "homepage": "http://codevinsky.github.io/brunch-with-edge-benedict",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "git://github.com/codevinsky/brunch-with-edge-benedict"
+    "url": "git://github.com/steerapi/brunch-with-bacon"
   },
   "scripts": {
-    "start": "node_modules/.bin/brunch watch --server"
+    "start": "brunch w -s"
   },
   "dependencies": {
     "jade": "~0.35",
