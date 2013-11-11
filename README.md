@@ -1,14 +1,14 @@
-# Brunch with Edge Benedict
+# Brunch with Bacon
 
-Brunch skeleton with AngularJS 1.2.0-rc-2, jQuery 2.0.3, Bootstrap 3.0, and Sling UI 0.1.2
+Brunch skeleton with AngularJS 1.2.0, jQuery 2.0.3, Bootstrap 3.0, Heroku
 
 ## Getting started
 * Install [Brunch](http://brunch.io): `npm install -g brunch`.
 * Install Brunch plugins: `npm install`.
 * Install [Bower](http://bower.io) components: `bower install`
 * Watch the project with continuous rebuild by
-`brunch watch --server`. This will also launch HTTP server.
-* Or build the minified project with `brunch build --optimize`.
+`brunch w -s`. This will also launch HTTP server.
+* Or build the minified project with `brunch b -P`.
 
 Open the `_public/` dir to see the result.
 
