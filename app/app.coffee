@@ -2,13 +2,13 @@
 
 # Declare app level module which depends on filters, and services
 
-App = angular.module('app', [
+window.app = angular.module('app', [
 	'ngRoute'
+	'ngAnimate'
 	'partials'
-	'sling.ui'
 ])
 
-App.config([
+app.config([
 	'$routeProvider'
 	'$locationProvider'
 	($routeProvider, $locationProvider, config) ->
@@ -19,3 +19,20 @@ App.config([
 		# Without server side support html5 must be disabled.
 		$locationProvider.html5Mode(false)
 ])
+
+init = ->
+	#do some initialization here
+
+window.initialized = false
+class Controller
+  constructor: (@scope) ->
+    for k in _.functions @
+      @scope[k] = @[k] if k!="constructor"
+    if window.initialized
+      return
+    window.initialized = true
+    init()
+
+# bootstrap angular
+angular.element(document).ready ->
+  angular.bootstrap document, ['app']
