@@ -3,9 +3,8 @@
 Brunch skeleton with AngularJS 1.2.0, jQuery 2.0.3, Bootstrap 3.0, Heroku
 
 ## Getting started
-* Install [Brunch](http://brunch.io): `npm install -g brunch`.
-* Install Brunch plugins: `npm install`.
-* Install [Bower](http://bower.io) components: `bower install`
+* Install [Brunch](http://brunch.io): `(sudo) npm install -g brunch`.
+* Create a new project `brunch new https://github.com/steerapi/brunch-with-bacon new-project`
 * Watch the project with continuous rebuild by
 `brunch w -s`. This will also launch HTTP server.
 * Or build the minified project with `brunch b -P`.
